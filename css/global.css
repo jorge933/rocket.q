@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
 
 :root {
- --black: #0'D'114F;
+ --black: #0D114F;
  --white: #FAFAFA;
  --red: #E83F5B;
  --light-blue: #E0ECFF;
@@ -9,6 +9,7 @@
  --background: #F6FAFF;
  --overlay: #040911;
  --icons-details: #A5B0C1;
+ --bg-blue-light: rgba(52, 133, 255, 0.3);
 
  --grey-dark: #4D5E77;
  --grey-blue: #A1B2CD;
@@ -31,17 +32,20 @@ body {
  width: 100vw;
  height: 100vh;
  background: var(--background);
+ display: flex;
+ overflow-x: hidden;
 }
 
 body, button, input, textarea {
  font-size: clamp(14px, 1.6rem, 2vw);
  font-family: 'Open Sans', sans-serif;
+ resize: none;
 }
 
 .sr-only {
  position: absolute;
  height: 1px;
- width: 1px;
+ width : 1px;
  padding: 0;
  margin: -1px;
  overflow: hidden;
@@ -75,10 +79,6 @@ button, .button {
  transition: filter .2s;
 }
 
-button:hover, .button:hover {
- filter: brightness(1.2);
-}
-
 button > img, .button > img {
  margin-right: 1rem;
 }
@@ -86,7 +86,9 @@ button > img, .button > img {
 button.outlined, .button.outlined {
  background: var(--white);
  color: var(--blue);
+ stroke: var(--blue);
  border: .2rem solid var(--blue);
+ transition: .25s;
 }
 
 .content header {
@@ -96,4 +98,24 @@ button.outlined, .button.outlined {
 
 .content header img {
  width: 16.7rem;
+}
+
+/*Hover buttons*/
+
+.hover-white {
+ stroke: var(--white);
+ border: 3px solid var(--blue);
+ transition: .25s;
+}
+
+.hover-white:hover {
+ background-color: white;
+ stroke: var(--blue);
+ color: var(--blue);
+}
+
+button.outlined:hover, .button.outlined:hover{
+ background-color: var(--blue);
+ stroke: var(--white);
+ color: var(--white);
 }

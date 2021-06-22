@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/room.css" />
+
+    <title>Criar Sala - Rocket.Q</title>
+</head>
+
+<body>
+    <div id="room" class="content">
+        <div class="link-copied">
+            <span>Código da sala copiado com sucesso!</span>
+        </div>
+
+        <header>
+            <a href="#">
+                <img src="/assets/logo.svg" alt="Rocket.Q Logo">
+            </a>
+
+            <div class="buttons">
+                <div class="button outlined copy">
+                    <span>#32343</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.6667 7.5H9.16667C8.24619 7.5 7.5 8.24619 7.5 9.16667V16.6667C7.5 17.5871 8.24619 18.3333 9.16667 18.3333H16.6667C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667V9.16667C18.3333 8.24619 17.5871 7.5 16.6667 7.5Z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M4.16675 12.5001H3.33341C2.89139 12.5001 2.46746 12.3245 2.1549 12.0119C1.84234 11.6994 1.66675 11.2754 1.66675 10.8334V3.33341C1.66675 2.89139 1.84234 2.46746 2.1549 2.1549C2.46746 1.84234 2.89139 1.66675 3.33341 1.66675H10.8334C11.2754 1.66675 11.6994 1.84234 12.0119 2.1549C12.3245 2.46746 12.5001 2.89139 12.5001 3.33341V4.16675"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <a href="#" class="button hover-white">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M14.1666 17.5V15.8333C14.1666 14.9493 13.8154 14.1014 13.1903 13.4763C12.5652 12.8512 11.7173 12.5 10.8333 12.5H4.16659C3.28253 12.5 2.43468 12.8512 1.80956 13.4763C1.18444 14.1014 0.833252 14.9493 0.833252 15.8333V17.5"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7.50008 9.16667C9.34103 9.16667 10.8334 7.67428 10.8334 5.83333C10.8334 3.99238 9.34103 2.5 7.50008 2.5C5.65913 2.5 4.16675 3.99238 4.16675 5.83333C4.16675 7.67428 5.65913 9.16667 7.50008 9.16667Z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M19.1667 17.5001V15.8334C19.1662 15.0948 18.9204 14.3774 18.4679 13.7937C18.0154 13.2099 17.3819 12.793 16.6667 12.6084"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.3333 2.6084C14.0503 2.79198 14.6858 3.20898 15.1396 3.79366C15.5935 4.37833 15.8398 5.09742 15.8398 5.83757C15.8398 6.57771 15.5935 7.2968 15.1396 7.88147C14.6858 8.46615 14.0503 8.88315 13.3333 9.06673"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Criar Sala
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section id="question-form">
+
+                <h2>Faça sua pergunta</h2>
+
+                <form action="">
+
+                    <label for="question" class="sr-only">O que você quer perguntar?</label>
+                    <textarea id="question" name="question" placeholder="O que você quer perguntar?"></textarea>
+
+                    <footer>
+
+                        <div>
+                            <div class="anonymous-question">
+                                <img src="/assets/lock.svg" alt="Cadeado">
+
+                                Esta pergunta é anônima
+                            </div>
+                        </div>
+
+                        <button class="hover-white" type="submit">Enviar</button>
+
+                    </footer>
+                </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+
+                <div class="questions">
+                    <div class="questions-wrapper">
+
+                        <div class="question-content">
+
+                            <div class="user">
+                                <img src="./assets/avatar.svg" alt="Avatar do usuario">
+                            </div>
+
+                            <div class="question">
+                                <p>Qual a diferença entre const, var e let</p>
+                            </div>
+
+                        </div>
+
+                        <div class="actions">
+
+                            <a href="#" class="check">
+                                <img src="/assets/check.svg" alt="">
+                                Marcar como lida
+                            </a>
+
+                            <a href="#" class="delete">
+                                <img src="/assets/trash.svg" alt="">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
