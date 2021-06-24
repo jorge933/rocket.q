@@ -22,6 +22,7 @@
  border: none;
  text-decoration: none;
  box-sizing: border-box;
+ outline: none;
 }
 
 html {
@@ -89,6 +90,15 @@ button.outlined, .button.outlined {
  stroke: var(--blue);
  border: .2rem solid var(--blue);
  transition: .25s;
+ cursor: pointer;
+}
+
+.outlined input {
+ color: var(--blue);
+ background: transparent;
+ width: 5.7rem;
+ font-weight: 600;
+ padding: 0;
 }
 
 button.red, .button.red {
@@ -128,8 +138,13 @@ button.grey, .button.grey {
  color: var(--blue);
 }
 
-button.outlined:hover, .button.outlined:hover{
+button.outlined:hover, .button.outlined:hover {
  background-color: var(--blue);
  stroke: var(--white);
+ color: var(--white);
+}
+
+.outlined:hover input {
+ cursor: pointer;
  color: var(--white);
 }

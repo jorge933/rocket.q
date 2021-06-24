@@ -1,4 +1,14 @@
 .modal-wrapper {
+ width: 1px;
+ height: 1px;
+ position: absolute;
+ left: -1000rem;
+ top: -1000rem;
+}
+
+.modal-wrapper.active {
+ opacity: 1;
+ visibility: visible;
  position: fixed;
  width: 100vw;
  height: 100vh;

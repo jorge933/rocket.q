@@ -13,7 +13,7 @@ header {
 
 #bg {
  grid-area: left;
- background: url('/assets/home-bg.svg') no-repeat -10rem top/contain;
+ background: url('../img/home-bg.svg') no-repeat -10rem top/contain;
 }
 
 main {

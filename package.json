@@ -1,0 +1,21 @@
+{
+  "name": "rocketq",
+  "version": "1.0.0",
+  "description": "Projeto de salas com chat com perguntas direcionadas ao criado da sala",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "db-init": "node ./src/db/init.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
