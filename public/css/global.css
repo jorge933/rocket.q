@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
 
+
 :root {
  --black: #0D114F;
  --white: #FAFAFA;
  --red: #E83F5B;
  --blue: #3485FF;
+ --bg-blue: #3485ff54; /* question wrapper dark */
  --background: #F6FAFF;
  --overlay: #040911;
  --icons-details: #A5B0C1;
@@ -35,6 +37,8 @@ body {
  background: var(--background);
  display: flex;
  overflow-x: hidden;
+ transition: background-color .3s;
+ z-index: 1;
 }
 
 body, button, input, textarea {
@@ -147,4 +151,10 @@ button.outlined:hover, .button.outlined:hover {
 .outlined:hover input {
  cursor: pointer;
  color: var(--white);
+}
+/* responsive */
+@media (max-width: 493px) {
+    .content header img {
+        padding-right: 1rem;
+    }
 }

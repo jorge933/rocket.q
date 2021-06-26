@@ -58,3 +58,46 @@ button_copy.addEventListener("click", () => {
 
     warning.addEventListener('click', () => warning.classList.remove('active'));
 })
+
+//dark 
+
+function dark() {
+    let body = document.querySelector('body');
+
+    if (body.classList == '') {
+
+        body.classList.add('dark');
+
+        if (body.classList == 'dark') {
+            let logo = document.querySelector('img.logo');
+            logo.src = '/img/logo-dark.svg';
+        }
+        
+
+    } else if (body.classList == 'dark') {
+
+        body.classList.remove('dark');
+
+        if (body.classList == '') {
+            let logo = document.querySelector('img.logo');
+            logo.src = '/img/logo.svg';
+        }
+    }
+}
+
+let active_dark = document.querySelector('.button-dark i');
+
+active_dark.addEventListener('click', () => {
+    
+
+    if (active_dark.classList == 'far fa-moon') {
+
+        active_dark.classList.replace('fa-moon', 'fa-sun')
+
+    } else if (active_dark.classList == 'far fa-sun') {
+        
+        active_dark.classList.replace('fa-sun', 'fa-moon')
+    }
+    
+    dark();
+})

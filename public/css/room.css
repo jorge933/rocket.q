@@ -51,6 +51,7 @@
 
 #room header .buttons .button:nth-child(2) {
  padding: 1.3rem 1.5rem;
+ word-break: break-all;
 }
 
 #room header .buttons .button:nth-child(2) svg {
@@ -196,4 +197,31 @@
 
 .no-questions:nth-child(3) {
  font: 400 1.4rem 'Open Sans';
+}
+
+@media (max-width: 493px) {
+    #room header .buttons .button:nth-child(2) span.text {
+        width: 8rem;
+    }
+    
+}
+
+@media (max-width: 455px) {
+    #room header {
+        flex-direction: column;
+    }
+
+    #question-form h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 233px) and (max-width: 290px) {
+    #room header .buttons {
+        flex-direction: column;
+    }
+
+    #room header .buttons .button {
+        margin: 1rem 0;
+    }
 }

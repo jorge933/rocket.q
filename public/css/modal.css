@@ -19,7 +19,7 @@
 }
 
 .modal-wrapper .modal {
- width: min(59rem, 90%);
+ width: min(59rem, 95%);
  margin: auto;
  padding: 6.4rem;
  border-radius: .8rem;
@@ -59,4 +59,14 @@
 .modal-wrapper .modal .buttons button {
  padding: 2.2rem 3.2rem;
  margin: 0rem 1.5rem;
+}
+
+@media (max-width: 512px) {
+    .modal-wrapper .modal .buttons {
+        flex-direction: column;
+    }
+
+    .modal-wrapper .modal .buttons button {
+        margin: 1rem 0;
+    }
 }

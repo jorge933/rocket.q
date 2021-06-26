@@ -93,3 +93,23 @@ input, button, .button {
  bottom: -15rem;
  right: 5.6rem;
 }
+
+@media (min-width: 150px) and (max-width: 330px) {
+    #bg {
+        position: absolute;
+        height: 1px;
+        width : 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    main {
+        width: 100vw;
+        margin-left: -60vw;
+        text-align: center;
+    }
+}
