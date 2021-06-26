@@ -1,11 +1,3 @@
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap");
-    font {
-        font-weight: 600;
-        font-family: 'Poppins';
-    }
-</style>
-
 # <font>Rocket.Q</font>
 
 ## Neste Projeto você pode criar salas ou entrar em uma e fazer perguntas exlcuir marcar como lida
