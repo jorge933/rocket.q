@@ -176,3 +176,24 @@
 #questions .question-wrapper.read .question-content .user {
  background-color: var(--grey-blue);
 }
+
+.no-questions {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 5rem;
+}
+
+.no-questions p {
+ margin-top: 1rem;
+}
+
+.no-questions p.no-question {
+ color: var(--black);
+ font: 700 1.8rem 'Poppins';
+}
+
+.no-questions:nth-child(3) {
+ font: 400 1.4rem 'Open Sans';
+}

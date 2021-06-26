@@ -46,6 +46,7 @@ button_copy.addEventListener("click", () => {
     id_room.select;
     id_room.setSelectionRange(0, 10);
     document.execCommand('copy');
+    window.getSelection().removeAllRanges();
 
     const warning = document.querySelector('.link-copied');
 
